@@ -1,0 +1,197 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    background-color: darkgrey;
+}
+
+main{
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+header{
+background-color: brown;
+flex-basis: 100%;
+height: 15vh;
+display:flex;
+align-items: center;
+
+}
+
+.img1{
+    height: 15vh;
+    padding: 1px;
+    border-radius: 15vh;
+    
+}
+
+
+
+.headername{
+flex-grow: 1;
+font-size: 8vh;
+text-align: center;
+color: white;
+font-weight: bolder;
+
+
+}
+nav{
+    background-color: navy;
+    flex-basis: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+
+
+}
+
+ul li{
+    list-style: none;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: navy;
+    font-size: 3vh;
+    padding: 1vh;
+    margin: 1.2vh;
+    background-color:orange;
+    border-radius: 10px;
+
+}
+
+ul li a:hover{
+    background-color:gold ;
+    border-left: 1vh red solid;
+    border-right: 1vh red solid;
+    transition: .5s;
+
+}
+
+
+section{
+    background-color: cadetblue;
+    flex-basis: 33.33%;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.secone{
+background-color: blue;
+flex-basis: 48%;
+margin: 2% 1% 2% 2%;
+color: white;
+font-size: 2vh;
+}
+
+.secone>p{
+    margin: 1vh;
+    padding: 5vh 2vh 12vh 3vh;
+    text-orientation: sideways-right;
+    text-align: left;
+    border: 1vh double red;
+}
+
+.sectwo{
+background-color: brown;
+flex-basis: 48%;
+margin: 2% 2% 2% 1%;
+align-content: flex-end ;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap-reverse;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+
+.sectwo>img{
+    width: 12vh;
+}
+
+vr{
+    width: 60%;
+}
+
+
+article{
+    background-color: darkgoldenrod;
+    flex-basis: 33.33%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+article>p, article>h2{
+    color: black;
+}
+
+
+.rs>img{
+width: 50%;
+
+}
+
+aside{
+    background-color: rgb(99, 27, 27);
+    flex-basis: 33.33%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+button{
+    background-color:brown;
+    width: 12vh;
+    margin: 1vh;
+    border-radius: 1vh;
+}
+
+button:hover{
+    background-color: darkslategrey;
+}
+
+input{
+    color: black;
+    border: .5vh solid brown;
+    border-radius: 2.5vh .1vh 2.5vh .1vh;
+}
+
+footer{
+    background-color: skyblue;
+    flex-basis: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.onef, .twof{
+    background-color: black;
+    
+}
