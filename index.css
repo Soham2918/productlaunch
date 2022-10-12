@@ -16,6 +16,7 @@ main{
     background-color: aqua;
     display: flex;
     flex-wrap: wrap;
+    flex-basis: 100%;
     
 }
 
@@ -107,7 +108,6 @@ font-size: 2vh;
     padding: 5vh 2vh 12vh 3vh;
     text-orientation: sideways-right;
     text-align: left;
-    border: 1vh double red;
 }
 
 .sectwo{
@@ -149,10 +149,11 @@ article>p, article>h2{
 }
 
 
-.rs>img{
+.rs>img, .dollar>img{
 width: 50%;
 
 }
+
 
 aside{
     background-color: rgb(99, 27, 27);
@@ -166,8 +167,8 @@ aside{
 
 button{
     background-color:brown;
-    width: 12vh;
     margin: 1vh;
+    padding: 1vh;
     border-radius: 1vh;
 }
 
@@ -179,6 +180,7 @@ input{
     color: black;
     border: .5vh solid brown;
     border-radius: 2.5vh .1vh 2.5vh .1vh;
+    flex-shrink:4;
 }
 
 footer{
@@ -194,4 +196,106 @@ footer{
 .onef, .twof{
     background-color: black;
     
+}
+
+@media all and (max-width:900px)
+ {
+    main{
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-flow: column;
+        
+    }
+    header{
+        width: 100%;
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+
+    }
+
+   
+
+
+    Ul li a{
+        font-size: small;
+        padding: 0% 2%;
+        border-radius:10%;
+        background-color: brown;
+        color: white;
+        
+    }
+
+    ul li a:hover{
+        background-color: black;
+        width: 100%;
+        color: white;
+    }
+   
+    
+    section{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .secone{
+        display: flex;
+        flex-grow: 2;
+        margin: 0%;
+        flex-basis: 100%;
+
+    }
+
+    .sectwo{
+        flex-grow: 1;
+        display: flex;
+        margin: 0%;
+        flex-basis: 100%;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        direction: ltr;
+        width: 100%;
+        }
+
+        .rs>img, .dollar>img{
+            width: 20%;
+        }
+
+        aside{
+            display: flex;
+            flex-direction:column;
+            width: 100%;
+        }
+        
+        footer{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
 }
